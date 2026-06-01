@@ -1,0 +1,4 @@
+@import "tailwindcss";
+@source "../src/main/resources/templates";
+
+.hidden { display: none !important; }

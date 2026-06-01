@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/output.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Jost', sans-serif; }
+    h1, h2, h3, .font-display { font-family: 'Cormorant Garamond', serif; }
+  </style>
+</head>
+<body class="bg-stone-50 text-stone-700 min-h-screen">
+ 
+  <!-- Header -->
+  <header class="text-center py-16 px-4 border-b border-stone-200">
+    <p class="text-xs tracking-[0.3em] uppercase text-stone-400 mb-3">os invitan a su boda</p>
+    <h1 class="font-display text-6xl font-light text-stone-800">Fran & Andrea</h1>
+    <p class="text-sm tracking-widest text-stone-400 mt-3">10 · octubre · 2026</p>
+  </header>
+ 
+  <!-- Tab navigation -->
+  <nav class="flex justify-center border-b border-stone-200 bg-white sticky top-0 z-10">
+    <button onclick="showTab('about')"    id="tab-about"    class="tab-btn px-6 py-4 text-sm tracking-widest uppercase text-stone-400 border-b-2 border-transparent transition-colors hover:text-stone-700">Nosotros</button>
+    <button onclick="showTab('wedding')"  id="tab-wedding"  class="tab-btn px-6 py-4 text-sm tracking-widest uppercase text-stone-400 border-b-2 border-transparent transition-colors hover:text-stone-700">La boda</button>
+    <button onclick="showTab('places')"   id="tab-places"   class="tab-btn px-6 py-4 text-sm tracking-widest uppercase text-stone-400 border-b-2 border-transparent transition-colors hover:text-stone-700">Qué visitar</button>
+    <button onclick="showTab('stay')"     id="tab-stay"     class="tab-btn px-6 py-4 text-sm tracking-widest uppercase text-stone-400 border-b-2 border-transparent transition-colors hover:text-stone-700">Dónde dormir</button>
+  </nav>
+ 
+  <!-- Main content -->
+  <main class="max-w-3xl mx-auto px-6 py-16">
+ 
+    <!-- About us -->
+    <section id="section-about">
+      <div class="flex flex-col md:flex-row gap-12 items-center">
+        <div class="md:w-1/2">
+          <h2 class="font-display text-4xl font-light text-stone-800 mb-6">Nuestra historia</h2>
+          <p class="text-stone-500 leading-relaxed mb-4">
+            Finalmente llegó la hora. Nos gusta hacer las cosas con calma y a nuestro propio ritmo,
+            pero ya iba tocando celebrar nuestra boda y montarnos una buena fiesta. Aquí podeis ver 
+            información sobre Granada y el evento para que podais disfrutar al máximo ese fin de semana.
+          </p>
+          <p class="text-stone-500 leading-relaxed">
+            ¡Estamos deseando que llegue el día para celebrarlo con vosotros!
+          </p>
+        </div>
+        <div class="md:w-1/2">
+          <img src="/images/Frandrea.jpeg" alt="Fran y Andrea" class="w-full rounded-sm object-contain">
+        </div>
+      </div>
+    </section>
+ 
+    <!-- The wedding -->
+	<section id="section-wedding" style="display: none">
+		<h2 class="font-display text-4xl font-light text-stone-800 mb-6">La
+			boda</h2>
+		<p class="text-stone-500 leading-relaxed mb-8">Tanto la ceremonia como
+			la celebración serán en La Mamunia, a medio camino entre Granada y Otura.</p>
+		<div class="border border-stone-200 p-6 rounded-sm mb-8">
+			<p class="text-xs tracking-[0.2em] uppercase text-stone-400 mb-2">Ceremonia
+				y celebración</p>
+			<p class="font-display text-xl text-stone-700">La Mamunia</p>
+			<p class="text-sm text-stone-400 mt-1">Ctra. Antigua de Motril Nac. 323-A, 
+			Km. 142, 18630 Otura, Granada · 12:00h</p>
+		</div>
+		<div class="rounded-sm overflow-hidden border border-stone-200">
+			<iframe
+				src="https://maps.google.com/maps?q=Ctra.+Antigua+de+Motril+Nac.+323-A,+Km.+142,+18630+Otura,+Granada&output=embed"
+				width="100%" height="300" style="border: 0; display: block;"
+				allowfullscreen="" loading="lazy"> </iframe>
+		</div>
+	</section>
+
+		<!-- Places to visit -->
+	<section id="section-places" style="display: none">
+		<h2 class="font-display text-4xl font-light text-stone-800 mb-6">Qué
+			visitar</h2>
+		<p class="text-stone-500 leading-relaxed mb-8">Recomendaciones
+			para los invitados que quieran hacer turismo.</p>
+		<ul class="space-y-10">
+			<li><img src="/images/alhambra.jpg" alt="Alhambra"
+				class="w-full aspect-video object-cover rounded-sm mb-4">
+				<div class="border-l-2 border-stone-300 pl-5">
+					<p class="font-display text-lg text-stone-700">La Alhambra</p>
+					<p class="text-sm text-stone-400">La primera opción tiene que ser
+						por supuesto la Alhambra. Es un complejo monumental con varias 
+						zonas diferentes: el palacio de Carlos V, el Generalife la Alcazaba...
+						Por lo que puede llevar una mañana completa o incluso más visitarla entera.
+						Se recomienda sacar las entradas mínimo con tres meses de antelación.</p>
+				</div></li>
+			<li><img src="/images/catedral.jpeg" alt="Catedral de Granada"
+				class="w-full aspect-video object-cover rounded-sm mb-4">
+				<div class="border-l-2 border-stone-300 pl-5">
+					<p class="font-display text-lg text-stone-700">Catedral de
+						Granada</p>
+					<p class="text-sm text-stone-400">La Catedral de Granada también es una visita
+						cultural obligatoria. En pleno centro de Granada, se puede visitar tanto la Catedral
+						como la Capilla Real. Desde la Catedral es fácil moverse hacia otros puntos como el
+						mercado de San Agustín, la heladería Los Italianos o el Corral del Carbon.</p>
+				</div></li>
+		</ul>
+	</section>
+
+		<!-- Places to stay -->
+    <section id="section-stay" style="display:none">
+      <h2 class="font-display text-4xl font-light text-stone-800 mb-6">Dónde dormir</h2>
+      <p class="text-stone-500 leading-relaxed mb-8">
+        Hoteles y alojamientos cercanos para los invitados que se queden a dormir.
+      </p>
+      <ul class="space-y-4">
+        <li class="border-l-2 border-stone-300 pl-5">
+          <p class="font-display text-lg text-stone-700">Nombre del hotel</p>
+          <p class="text-sm text-stone-400">Dirección · Precio aproximado por noche.</p>
+        </li>
+        <li class="border-l-2 border-stone-300 pl-5">
+          <p class="font-display text-lg text-stone-700">Nombre del hotel</p>
+          <p class="text-sm text-stone-400">Dirección · Precio aproximado por noche.</p>
+        </li>
+      </ul>
+    </section>
+ 
+  </main>
+ 
+  <!-- Footer -->
+  <footer class="text-center py-8 text-xs text-stone-300 tracking-widest uppercase border-t border-stone-100">
+    Fran & Andrea · 2026
+  </footer>
+
+	<script>
+  const sections = ['about', 'wedding', 'places', 'stay'];
+
+  function showTab(name) {
+    sections.forEach(s => {
+      document.getElementById('section-' + s).style.display = 'none';
+      const btn = document.getElementById('tab-' + s);
+      btn.classList.remove('border-stone-700', 'text-stone-700');
+      btn.classList.add('border-transparent', 'text-stone-400');
+    });
+    document.getElementById('section-' + name).style.display = 'block';
+    const active = document.getElementById('tab-' + name);
+    active.classList.add('border-stone-700', 'text-stone-700');
+    active.classList.remove('border-transparent', 'text-stone-400');
+  }
+
+  showTab('about');
+	</script>
+
+</body>
+</html>
